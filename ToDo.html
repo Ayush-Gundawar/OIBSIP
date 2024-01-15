@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="ToDo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./resources/check-mark.png" type="image/x-icon">
+</head>
+<body>
+    <div id="pointer"></div>
+    <div id="themeColorPanel">
+        <button id="blueButton" class="themeColor" title="Blue"></button>
+        <button id="greenButton" class="themeColor" title="Green"></button>
+        <button id="greyButton" class="themeColor" title="Grey"></button>
+    </div>
+    <div id="container">
+        <div id="heading"><h1>A ToDo App  <img id="image" src="./resources/check-mark.png" alt=""></h1></div>
+        <div id="textDiv"><input type="text" name="textArea" id="textArea" placeholder="add a task"></div>
+        <div id="textDivButton"><button type="button" width="80px" height="80px" id="addButton" title="Add the Task"><img src="./resources/add.png" alt="Add" height="80px" width="80px"></button></div>
+        <div id="textDivButton"><button type="button" width="80px" height="80px" id="minusButton" title="Clear the Input"><img src="./resources/minus.png" alt="Minus"></button></div>
+        <div id="TaskListContainer">
+            <div id="TaskList">
+                <h2 class="TaskHeading">Pending Tasks</h2>
+                <div class="Tasks pendingTasks">
+                    
+                </div>
+                <div id="whiteLine"></div>
+                <h2 class="TaskHeading">Completed Tasks</h2>
+                <div class="Tasks completedTasks">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="github">
+        <a href="https://github.com/Ayush-Gundawar/OIBSIP.git" title="GitHub Page" ><img src="./resources/GitHub.png" height="50px"alt="GitHub"></a>
+    </div>
+    <div class="referenceContainer">
+        <div>References: <button type="button" id="showReference"><img src="./resources/down-arrow.png" alt="down" id="imageReference"></button></div>
+        <ul id="references">
+            <li><a href="https://www.flaticon.com/free-icons/down-arrow" title="down arrow icons">Down arrow icons created by th studio - Flaticon</a></li>
+            <li><a href="https://www.flaticon.com/free-icons/plus" title="plus icons">Plus icons created by Smashicons - Flaticon</a></li>
+            <li><a href="https://www.flaticon.com/free-icons/subtract" title="subtract icons">Subtract icons created by Angelo Troiano - Flaticon</a></li>
+            <li><a href="https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Octopocto - Flaticon</a></li>
+            <li><a href="https://www.flaticon.com/free-icons/up-arrow" title="up arrow icons">Up arrow icons created by Freepik - Flaticon</a></li>
+            <li><a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by Arkinasi - Flaticon</a></li>
+            <li><a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Xinh Studio - Flaticon</a></li>
+        </ul>
+    </div>
+    <script src="./ToDo.js"></script>
+</body>
+</html>
